@@ -1,0 +1,17 @@
+<mat-toolbar color="primary" class="navbar">
+  <mat-toolbar-row>
+    <div class="logo-container" routerLink="/students">
+      <mat-icon>school</mat-icon>
+      <span>{{ title }}</span>
+    </div>
+    <span class="spacer"></span>
+    <nav class="nav-links">
+      <button mat-button routerLink="/students" routerLinkActive="active-link">
+        <mat-icon>list</mat-icon> Students
+      </button>
+      <button mat-raised-button color="accent" routerLink="/add">
+        <mat-icon>add</mat-icon> Add Student
+      </button>
+    </nav>
+  </mat-toolbar-row>
+</mat-toolbar>
